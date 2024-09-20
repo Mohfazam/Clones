@@ -48,7 +48,7 @@ span{
 
 .nav-right {
 
-    margin-left: 3rem;
+    margin-left: auto;
     margin-right: auto;
     background-color: #0e0e0e;
     height: 4rem;
@@ -102,20 +102,22 @@ span{
 }
 
 .main{
-    width: 100vw;
+    width: 100%;
+    min-height: calc(100vh - 5rem);
     display: flex;
-    margin-top: 32px;
+    padding: 2rem 10%;
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
 }
 
 .left{
-    margin: 0.4rem 10rem 1rem 10rem;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    gap: 2rem;
+    text-align: left;
 }
 
 .small-heading{
@@ -123,26 +125,18 @@ span{
     color: #9ba3b4;
     text-align: center;
     line-height: 2rem;
-    margin-left: 12rem;
-    margin-right: 12rem;
     border-radius: 14px;
-
+    padding: 0.25rem;
 }
 
 .main-heading{
     color: #e9eaeb;
     font-size: 36px;
-    margin-left: 10px;
-    margin-right: 32px;
 }
 
-.main-button-div{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.main-button{
+#main-button{
+    width: auto;
+    height: auto;
     background-color: #0078d4;
     color: #ffffff;
     padding: 16px 32px; 
@@ -169,10 +163,31 @@ span{
     margin-right: 4rem;
 }
 
+.left-links{
+    text-decoration: none;
+    color: #9ba3b4;
+}
+
+.left-links a{
+    color: #4daafc
+}
+
 
 .right {
     width: 50%; 
     margin: 0.4rem;
     display: flex;
     justify-content: center;
+}
+
+.img-div{
+    width: 100%;
+    max-width: 720px;
+}
+
+.img-div img{
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: contain;
 }

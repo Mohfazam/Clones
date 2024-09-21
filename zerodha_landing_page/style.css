@@ -70,15 +70,17 @@ body {
 
 button{
     width: 204px;
+    font-size: 1.25rem;
     height: 45px;
     background-color: #387ed1;
     color: #fff;
     border: 1px solid rgba(0, 0, 0, 0) !important;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 
 button:hover{
     background: #222;
     color: #fff !important;
+    cursor: pointer;
 }

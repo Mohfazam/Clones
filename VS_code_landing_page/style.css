@@ -82,6 +82,7 @@ span{
     color: #ffffff;
     height: 2.5rem;
     width: 6rem;
+    border: none;
     border-radius: 4px;
 }
 
@@ -105,17 +106,22 @@ span{
     width: 100%;
     min-height: calc(100vh - 5rem);
     display: flex;
-    padding: 2rem 10%;
+    padding: 1rem 10%;
     flex-direction: row;
     justify-content:space-around;
+    border-bottom: 1px solid #2f2828;
     align-items: center;
 }
 
 .left{
     width: 45%;
     display: flex;
+    height: auto;
     flex-direction: column;
     justify-content: start;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    box-sizing: border-box;
     gap: 2rem;
     text-align: left;
 }
@@ -131,7 +137,7 @@ span{
 
 .main-heading{
     color: #e9eaeb;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 #main-button{
@@ -190,4 +196,62 @@ span{
     height: auto;
     max-height: 460px;
     object-fit: contain;
+}
+
+
+.language-options-container{
+    display: flex;
+    color: #ffffff;
+    margin-top: 2rem;
+    padding: 1rem 10%;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+}
+
+.lang-left{
+    padding-left: 14px;
+    padding-right: 40px;
+    
+}
+
+.lang-left p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #9ba3b4;
+    margin-top: 10px;
+}
+
+.lang-right{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 8px;
+    width: 100%;
+    padding: 0 40px;
+    column-gap: 2rem;
+}
+
+.lang-option{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px;
+
+}
+
+.lang-option img{
+    width: auto;
+    height: 40px;
+}
+
+.lang-option p{
+    font-size: 16px;
+    line-height: 100%;
+    background-color: unset;
+    color: #9ba3b4;
+    margin: 0px;
 }
